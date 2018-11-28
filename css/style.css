@@ -1,0 +1,51 @@
+/*
+Error: Invalid CSS after "...on añade($num){": expected "}", was "for $z from 1 t..."
+        on line 101 of scss/style.scss
+
+96: 
+97: //Funcion con For
+98: 
+99: @function añade($num){
+100: 	
+101: 	for $z from 1 through $num{
+102: 		.col-#{$z}{
+103: 			width:100/$z+"%";
+104: 			return $z;
+105: 		}
+106: 	}
+
+Backtrace:
+scss/style.scss:101
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1179:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1115:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1110:in `tok!'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:656:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:258:in `function_directive'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:220:in `special_directive'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:195:in `directive'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:673:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:666:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:123:in `stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:39:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:403:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:378:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:295:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:471:in `on_file_changed'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:328:in `block in watch'
+/usr/lib/ruby/vendor_ruby/listen/event/config.rb:23:in `call'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:115:in `_process_changes'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:19:in `block in loop_for'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop_for'
+/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:84:in `_wait_for_changes'
+/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:42:in `block in setup'
+/usr/lib/ruby/vendor_ruby/listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...on añade($num){\": expected \"}\", was \"for $z from 1 t...\"\A         on line 101 of scss/style.scss\A \A 96: \A 97: //Funcion con For\A 98: \A 99: @function añade($num){\A 100: 	\A 101: 	for $z from 1 through $num{\A 102: 		.col-#{$z}{\A 103: 			width:100/$z+\"%\";\A 104: 			return $z;\A 105: 		}\A 106: 	}"; }
